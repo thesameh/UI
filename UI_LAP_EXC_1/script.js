@@ -18,16 +18,20 @@ $(document).ready(function () {
 });
 
 function dateCount() {
-  var deadline = "2021-11-17 00:00:00";
+  var deadline = "2021-11-17 11:59 pm";
 
   var date1 = new Date(deadline);
   var date2 = new Date();
   var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+  // logic: switch units then remove the value of the switched amount from the original time difference
+  
+  
   /*
   to add days to the counter activate this and add (diffDays + " days and " +) to the html code below
   var diffDays = Math.floor(timeDiff / (1000 * 3600 * 24));  
   timeDiff = diffDays > 0 ? timeDiff - diffDays * 1000 * 3600 * 24 : timeDiff;
   */
+
 
   var diffHours = Math.floor(timeDiff / (1000 * 3600));
   timeDiff = diffHours > 0 ? timeDiff - diffHours * 1000 * 3600 : timeDiff;
