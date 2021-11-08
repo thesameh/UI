@@ -49,10 +49,31 @@ function submitForm() {
     var gender = $('[name="gender"]:checked').length > 0 ? $('[name="gender"]:checked').attr("gender") : (err = true);
     var genre = $("#genre").val().trim(); // no need to check since there is a defualt option
     if (err) {
-      alert("All fields are required");
+      var text = "All fields are required!";
+      btns = {
+        "Try again": function () {
+          $(this).dialog("close");
+        },
+      };
     } else {
-      alert(`${name}, ${gender}, ${genre} - successfully applied`);
+      var text = name + ", " + gender + ", " + genre + " - successfully applied";
+      btns = {};
     }
+    $("#dialog_text").html(text);
+    $("#dialog").dialog({
+      /*  width: 400,
+      height: 250, */
+      modal: true,
+      show: {
+        effect: "fade",
+        duration: 200,
+      },
+      hide: {
+        effect: "fade",
+        duration: 200,
+      },
+      buttons: btns,
+    });
   });
 }
 
