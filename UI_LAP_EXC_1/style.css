@@ -1,0 +1,115 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.task_container {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+/* task 1 */
+#timer {
+    font-size: 24px;
+}
+
+
+/* task 2 */
+#form_container {
+    width: 100%;
+    max-width: 301px;
+    margin: 50px auto;
+}
+
+#form_title {
+    /*    font-size: 24px;
+    font-weight: bold; */
+}
+
+.input_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+#form .radio_container,
+#form select {
+    width: 160px;
+}
+
+#form select {
+    padding: 4px 3px;
+    border-radius: 0;
+    border: 1px solid black
+}
+
+#form input {
+    padding: 4px 5px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid black
+}
+
+#form #apply {
+    padding: 4px 15px;
+    background-color: white;
+}
+
+#form #apply:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* task 3 */
+td {
+    padding: 5px;
+}
+
+.color {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.border {
+    background-color: #ccc;
+}
+
+
+/* task 4 */
+#list {
+    font-weight: bold;
+    color: #0000FF;
+}
+
+
+/* task 5 */
+#font_size_controller {
+    padding: 0 14px 20px;
+    border: 1px solid #000000;
+    width: 270px;
+    margin-bottom: 25px;
+}
+
+#buttons_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buttons_container button {
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    min-width: 30%;
+    background-color: #fff
+}
+
+#buttons_container button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff
+}

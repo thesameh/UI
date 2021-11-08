@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>LABORATORY EXERCISE No. 1: JavaScript and jQuery</title>
+  </head>
+  <body>
+    <section id="task_1" class="task_container">
+      <h1 class="task_title">Task 1:</h1>
+      <p class="task_description">
+        Create a website containing a counter that indicates how many hours, minutes and seconds (hh: mm: ss format, eg 02:20:05) has left until the end of the deadline for the homework assignment.
+        The counter is refreshed every second. It is considered that every day at midnight the deadline for delivering the homework for the current day expires. Use JavaScript to solve the task.
+      </p>
+      <div id="counter">00:00:00</div>
+    </section>
+    <section id="task_2" class="task_container">
+      <h1 class="task_title">Task 2:</h1>
+      <p class="task_description">
+        Create a web page for applying to X-Factor, After pressing the button “Apply”, it should be checked whether all text fields are filled in. If data is entered in all text fields, a dialog
+        window appears with the message in format: "First name, gender, genre - successfully applied". Otherwise, write an error message - "All fields are required". Use JavaScript to solve the task.
+      </p>
+      <div id="form_container">
+        <h2 id="form_title">X-Factor Application Form</h2>
+        <form id="form">
+          <div class="input_row">
+            <label for="name">Name </label>
+            <input type="text" id="name" placeholder="" />
+          </div>
+
+          <div class="input_row">
+            <label for="a_name">Artistic name </label>
+            <input type="text" id="a_name" placeholder="" />
+          </div>
+
+          <div class="input_row">
+            <label for="gender">Sex </label>
+            <div class="radio_container">
+              <input type="radio" name="gender" gender="Male" id="gender_m"  />
+              <span class="checkbox_label">Male</span>
+              <input type="radio" name="gender" gender="Female" id="gender_f" />
+              <span class="checkbox_label">Female</span>
+            </div>
+          </div>
+
+          <div class="input_row">
+            <label for="genre">Genre </label>
+            <select name="genre" id="genre">
+              <option value="Classical Music">Classical Music</option>
+              <option value="Genre 2">Genre 2</option>
+              <option value="Genre 3">Genre 3</option>
+            </select>
+          </div>
+
+          <input type="submit" id="apply" value="Apply"></input>
+        </form>
+      </div>
+    </section>
+    <section id="task_3" class="task_container">
+      <h1 class="task_title">Task 3:</h1>
+      <p class="task_description">
+        Use JQuery to solve the task (to change the background of the columns on an odd position and to
+        change the font color to red and make it bold for the rows on an odd position).
+      </p>
+      <table>
+        <tr>
+        <td> Car Registration Plates </td>
+        <td> Brand </td>
+        <td> Color </td>
+        </tr>
+        <tr>
+        <td>SK-9000-AC</td>
+        <td>Alfa Romeo</td>
+        <td> Black </td>
+        </tr>
+        <tr>
+        <td>VE-8000-AB</td>
+        <td>Toyota Yaris</td>
+        <td>White</td>
+        </tr>
+        <tr>
+        <td>KO-7000-AD</td>
+        <td>Renault Meganne</td>
+        <td>Black</td>
+        </tr>
+        <tr>
+        <td>PP-6000-AC</td>
+        <td>Mercedes</td>
+        <td>Red</td>
+        </tr>
+        <tr>
+        <td>BT-5000-AB</td>
+        <td>BMW</td>
+        <td>Grey</td>
+        </tr>
+        <tr>
+        <td>SN-4000-AC</td>
+        <td>Peugeot</td>
+        <td>Yellow</td>
+        </tr>
+        </table>
+    </section>
+
+    <section id="task_4" class="task_container">
+      <h1 class="task_title">Task 4:</h1>
+      <p class="task_description">
+        By pressing the "Change" button, the color of the letters should be changed (fig. 4) using
+        JQuery. 
+      </p>
+      <ul id="list">
+        <li>Logo-Photo</li>
+        <ol type="I">
+        <li>url - thumbnail: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-icon: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-default: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        </ol>
+        <li>Header-Photo</li>
+        <ol type="I">
+        <li>url - thumbnail: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-icon: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-default: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        </ol>
+        <li>Footer-Photo</li>
+        <ol type="I">
+        <li>url - thumbnail: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-icon: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-default: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        </ol>
+        <li>Main-Photo</li>
+        <ol type="I">
+        <li>url - thumbnail: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>ur-icon: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        <li>url-default: www.sth.com/GAVassdfSJFKBAFsadfdsg</li>
+        </ol>
+      </ul>
+      <button type="submit" id="change">Change</button>
+    </section>
+
+    <section id="task_5" class="task_container">
+      <h1 class="task_title">Task 5:</h1>
+      <p class="task_description">
+        By clicking the "Increase" button, the text font should increase by factor (eg. 1.5) with
+        animation. Analogously, by clicking on the button "Decrease", the font should be reduced by
+        the same factor with animation.
+        By clicking the "Initial" button, the size of the font should be reset to the default size.
+      </p>
+      <div id="font_size_controller">
+        <h3>Font Size:</h3>
+        <div id="buttons_container">
+          <button  id="font_init" class="change_btn" change="init">Initial</button>
+          <button  id="font_inc" class="change_btn" change="1">Increase</button>
+          <button  id="font_dec" class="change_btn" change="-1">Decrease</button>
+        </div>
+      </div>
+      <div id="font_size_controlled">
+        <h3>How to connect to the internet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Iusto id dolorem consequuntur sapiente porro, 
+          sequi vel magnam provident neque nulla libero hic, 
+          similique ducimus eos quia nesciunt nisi distinctio. Rerum.</p>
+      </div>
+      
+    </section>
+  </body>
+</html>
