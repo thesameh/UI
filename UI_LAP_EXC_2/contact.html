@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#cat_menu_trig").click(function () {
+          $("#cat_menu").toggleClass("open");
+        });
+      });
+    </script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <a title="home" id="logo" href="task_2.html">Logo</a>
+      <div id="menu">
+        <div class="menu_item drop_menu_item">
+          <div id="cat_menu_trig">Categories</div>
+          <div id="cat_menu">
+            <a href="cat_1.html">Food and Drink</a>
+            <a href="cat_2.html">Electronics</a>
+            <a href="cat_3.html">Home and Garden</a>
+          </div>
+        </div>
+        <div class="menu_item">
+          <a href="contact.html">contact</a>
+        </div>
+        <div class="menu_item">
+          <a href="about.html">about us</a>
+        </div>
+      </div>
+    </nav>
+    <h1>Contact</h1>
+
+    <p>contact form</p>
+  </body>
+</html>

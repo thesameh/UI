@@ -1,0 +1,70 @@
+<!-- Sameh Shahin (ext210010: sameh.shahin@students.finki.ukim.mk) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <title>Task 1</title>
+
+    <style>
+      #tabs_container {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      ul.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+        padding: 0.5em;
+      }
+      .ui-tabs .ui-tabs-nav li {
+        list-style: none;
+        float: left;
+        position: relative;
+        top: 0;
+        margin: 0 0.5em 0 0;
+        border-bottom-width: 1px;
+        padding: 0;
+        white-space: nowrap;
+        border-radius: 3px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#tabs_container").tabs();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="tabs_container">
+      <ul>
+        <li><a href="#tabs_1">Open start</a></li>
+        <li><a href="#tabs_2">Connect</a></li>
+        <li><a href="#tabs_3">Pin apps</a></li>
+      </ul>
+      <div id="tabs_1">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, iusto? Ipsam voluptas nesciunt repellendus corporis praesentium natus
+          laudantium, et perspiciatis, illum, expedita consequatur sunt repudiandae doloribus voluptate sint? Numquam, quae?
+        </p>
+      </div>
+      <div id="tabs_2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae consequatur est aut necessitatibus excepturi quos voluptatibus magnam,
+          ipsam, ratione, soluta veritatis amet rerum. Quod animi molestias aspernatur at voluptatibus nihil?
+        </p>
+      </div>
+      <div id="tabs_3">
+        <p>
+          Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu
+          congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem
+          enim, pretium nec, feugiat nec, luctus a, lacus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

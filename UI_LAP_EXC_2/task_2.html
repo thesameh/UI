@@ -1,0 +1,89 @@
+<!-- Sameh Shahin (ext210010: sameh.shahin@students.finki.ukim.mk) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#cat_menu_trig").click(function () {
+          $("#cat_menu").toggleClass("open");
+        });
+      });
+    </script>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <nav>
+        <a title="home" id="logo" href="task_2.html">Logo</a>
+        <div id="menu">
+          <div class="menu_item drop_menu_item">
+            <div id="cat_menu_trig">Categories</div>
+            <div id="cat_menu">
+              <a href="cat_1.html">Food and Drink</a>
+              <a href="cat_2.html">Electronics</a>
+              <a href="cat_3.html">Home and Garden</a>
+            </div>
+          </div>
+          <div class="menu_item">
+            <a href="contact.html">contact</a>
+          </div>
+          <div class="menu_item">
+            <a href="about.html">about us</a>
+          </div>
+        </div>
+      </nav>
+      <div id="cats">
+        <h1 id="cats_title">Shop now</h1>
+        <br />
+
+        <div class="cat_container">
+          <h3 class="cat_title">Food and Drink</h3>
+          <div class="cat_higlights">
+            <img class="cat_img" src="https://via.placeholder.com/150/75DBCD/000000?text=Drinks" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/C9DBBA/000000?text=food" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/F5CDA7/000000?text=FAndD" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/FAA381/000000?text=Drinksandfood" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/DCDBA8/000000?text=DandF" alt="" />
+            <a href="cat_1.html">
+              <img class="cat_img cat_more" src="https://via.placeholder.com/150/ffffff/000000?text=MORE+>" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="cat_container">
+          <h3 class="cat_title">Electronics</h3>
+          <div class="cat_higlights">
+            <img class="cat_img" src="https://via.placeholder.com/150/F5CDA7/000000?text=ElTest" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/C9DBBA/000000?text=DTest" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/75DBCD/000000?text=Digitals" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/DCDBA8/000000?text=Electronics" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/FAA381/000000?text=Electronicss" alt="" />
+            <a href="cat_2.html">
+              <img class="cat_img cat_more" src="https://via.placeholder.com/150/ffffff/000000?text=MORE+>" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="cat_container">
+          <h3 class="cat_title">Home and Garden</h3>
+          <div class="cat_higlights">
+            <img class="cat_img" src="https://via.placeholder.com/150/FAA381/000000?text=Home" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/F5CDA7/000000?text=Gardens" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/C9DBBA/000000?text=HandG" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/DCDBA8/000000?text=HG" alt="" />
+            <img class="cat_img" src="https://via.placeholder.com/150/75DBCD/000000?text=HomeAndGarden" alt="" />
+            <a href="cat_3.html">
+              <img class="cat_img cat_more" src="https://via.placeholder.com/150/ffffff/000000?text=MORE+>" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
