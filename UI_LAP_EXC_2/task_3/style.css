@@ -1,0 +1,109 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#welcome {
+    margin: 0;
+    font-size: 40px;
+}
+
+#search_field {
+    padding: 4px 5px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid black
+}
+
+#books_container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 250px;
+}
+
+
+
+#add_book_trigger {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book_card {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 10px;
+    margin: 0 15px 0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.book_card h4 {
+    margin: 5px 0 10px;
+}
+
+.book_card small {
+    margin: 0 0 10px;
+}
+
+.book_card .why {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+
+
+#add_book_form {
+    width: 100%;
+    max-width: 301px;
+    margin: 50px auto;
+}
+
+.input_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+#add_book_form input {
+    padding: 4px 5px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid black
+}
+
+#add_book_form #add {
+    padding: 4px 15px;
+    background-color: white;
+}
+
+#add_book_form #add:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

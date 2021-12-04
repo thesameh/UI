@@ -9,12 +9,38 @@
     <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Task 3</title>
-
-    <style>
-      
-    </style>
-    <script></script>
   </head>
-  <body></body>
+  <body>
+    <div id="main_container">
+      <nav>
+        <h1 id="welcome">Welcome <small style="font-size: 14px"> to your personal book recommendation website</small></h1>
+        <input id="search_field" type="text" placeholder="Search" />
+      </nav>
+
+      <hr />
+      <div id="books_container">
+        <div id="add_book_trigger" class="book_card">Add a new book</div>
+        <form id="add_book_form">
+          <div class="input_row">
+            <label for="name">Book Name </label>
+            <input type="text" id="name" placeholder="" />
+          </div>
+
+          <div class="input_row">
+            <label for="a_name">Author Name </label>
+            <input type="text" id="a_name" placeholder="" />
+          </div>
+          <br />
+          <div class="input_row" style="flex-flow: column; align-items: flex-start">
+            <label for="form_comment">Why do you recommend this book? </label>
+            <br />
+            <textarea name="" id="form_comment" cols="30" rows="10" style="width: 100%"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

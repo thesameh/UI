@@ -1,0 +1,8 @@
+- In my opinion the best navigational pattern for this website is no navigation at all!
+as this is basically a list that is added by the user, a quick search field added in the menu is the best way for the user to quickly find what they are looking for
+
+- additionally the list could be enhanced by implemnting a sorting algorithm that runs when adding a new book.
+
+- the book adding form was added in a dialog which deactivates anything else on the website as long as it's open.
+
+- as the comment is the least important information it was hidden in a dialog to only be viewed when the user is considering the book
