@@ -1,0 +1,101 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee
+}
+
+#logo {
+    font-size: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#manufacturers_list {
+    /*     list-style: none;*/
+}
+
+.man_l {
+    margin-bottom: 20px;
+}
+
+.man_l a {
+    text-decoration: none;
+    color: black;
+}
+
+.man_l a:hover {
+    text-decoration: underline;
+}
+
+.man_about_trig {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.man_details .man_about_info {
+    display: none;
+}
+
+/* drones */
+.drones_container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.drone_box {
+    margin-bottom: 20px;
+    width: 30%;
+    min-width: 250px;
+}
+
+.drone_box img {
+    max-width: 100%;
+}
+
+.drone_name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.drone_btns {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.drone_btns button {
+    width: 45%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.rate_field {
+    border: 1px solid black;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.drone_btns button:hover {
+    background-color: black;
+    color: white;
+}
