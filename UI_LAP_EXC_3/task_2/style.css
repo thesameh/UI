@@ -1,0 +1,62 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    margin-left: auto;
+    display: flex;
+}
+
+.menu_item {
+    position: relative;
+    margin-right: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.menu_item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu_item a:hover {
+    text-decoration: underline;
+}
+
+
+.cat_higlights {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-x: scroll;
+}
+
+.cat_img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
