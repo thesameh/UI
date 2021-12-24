@@ -1,0 +1,23 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: rgb(247, 176, 58);
+    border-color: rgb(247, 176, 58);
+}
+
+a.ui-state-default.ui-state-active {
+    background: rgb(255, 241, 165);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    color: rgb(34, 151, 198);
+    background: rgb(248, 248, 248);
+}

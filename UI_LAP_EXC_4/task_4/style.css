@@ -1,0 +1,42 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    width: 500px;
+    margin: 100px auto;
+}
+
+#flights {
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+td,
+th {
+    border: 1px solid rgb(233, 233, 233);
+    text-align: left;
+    padding: 8px;
+    font-weight: 300;
+}
+
+thead tr {
+    background-color: #dddddd;
+}
+
+#addFlight {
+    margin-top: 30px;
+}
+
+#dialog {
+    display: none
+}
+
+#dialog input,
+#dialog select {
+    margin-bottom: 15px;
+}
+
+#err {
+    color: #bf0000;
+}

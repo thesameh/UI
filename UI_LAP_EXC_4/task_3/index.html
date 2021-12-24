@@ -1,0 +1,61 @@
+<!-- Sameh Shahin (ext210010: sameh.shahin@students.finki.ukim.mk) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <table id="flights">
+        <thead>
+          <tr>
+            <th>Cde</th>
+            <th>Airline</th>
+            <th>To</th>
+            <th>Class</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="addFlight">Add new entry</button>
+      <div id="dialog" title="Create new flight">
+        <p>All fields are mandatory</p>
+        <br />
+        <br />
+        <label for="code">Code</label>
+        <br />
+        <input type="number" name="code" />
+        <br />
+
+        <label for="airline">Airline</label>
+        <br />
+        <input type="text" name="airline" />
+        <br />
+
+        <label for="to">To</label>
+        <br />
+        <input type="text" name="to" />
+        <br />
+
+        <label for="class">Class</label>
+        <br />
+        <select name="class">
+          <option value="Business">Business</option>
+          <option value="Economy">Economy</option>
+        </select>
+        <br />
+        <br />
+        <div id="err"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
