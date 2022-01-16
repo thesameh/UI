@@ -1,0 +1,71 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+#form_container {
+    width: 400px;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#form_container input,
+#pass_dialog input,
+#form_container textarea {
+    margin: 4px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 5px 2px;
+    width: 200px;
+    outline: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#form_container #content_placeholder {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(144, 189, 144);
+    padding: 5px;
+}
+
+#insert_dialog textarea {
+    height: 150px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#form_container button {
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    display: none;
+}
+
+#dialog_error,
+#dialog_error_2 {
+    color: rgb(165, 0, 0);
+}
+
+#dialog_error_2 {
+    font-size: 22px;
+}
+
+#insert_dialog,
+#pass_check_dialog,
+#status_dialog,
+#insert_dialog {
+    display: none;
+}

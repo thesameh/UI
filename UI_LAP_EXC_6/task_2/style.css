@@ -1,0 +1,160 @@
+body {
+    font-family: helvetica;
+    margin: 0;
+}
+
+#main_container {
+
+    margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.blue_strip {
+    background-color: teal;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* pending */
+.step_ind {
+    padding: 5px 15px;
+    margin: 0 5px;
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* passed */
+.step_ind.done {
+    opacity: 0.5;
+}
+
+/* active */
+.step_ind.current {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+
+
+
+
+
+
+#steps_container {
+    margin: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#form_container {
+    width: 400px;
+    border: 1px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#form_container input,
+#pass_dialog input,
+#form_container textarea {
+    margin: 4px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 5px 2px;
+    width: 200px;
+    outline: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#form_container #content_placeholder {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(144, 189, 144);
+    padding: 5px;
+}
+
+#insert_dialog textarea {
+    height: 150px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#form_container button,
+.step_nav,
+#delete_sent {
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.step_nav.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    display: none;
+}
+
+
+#dialog_error,
+#dialog_error_2 {
+    color: rgb(165, 0, 0);
+}
+
+#dialog_error_2 {
+    font-size: 22px;
+}
+
+#insert_dialog,
+#pass_check_dialog,
+#status_dialog,
+#insert_dialog {
+    display: none;
+}
+
+#sent_emails {
+    height: calc(100vh - 250px);
+    overflow: scroll;
+    width: 400px;
+    border: 1px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px
+}
+
+.sent_email {
+    width: 100%;
+    border: 1px solid rgb(156, 156, 156);
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.selected_email {
+    border: 2px solid black;
+    padding: 14px;
+}
+
+
+
+#step_2 {
+    display: none;
+}
+
+#step_3 {
+    display: none;
+    font-size: 30px;
+}

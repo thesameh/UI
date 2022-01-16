@@ -1,0 +1,125 @@
+<!-- Sameh Shahin (ext210010: sameh.shahin@students.finki.ukim.mk) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id="main_container">
+      <div id="steps_indicator" class="blue_strip">
+        <div id="step_ind_1" data-step='1' class="step_ind">Email</div>
+        <div id="step_ind_2" data-step='2' class="step_ind">Sent</div>
+        <div id="step_ind_3" data-step='3' class="step_ind">Done</div>
+      </div>
+      <div id="steps_container">
+        <div id="step_1" class='step_block'>
+          <div id="form_container">
+            <h1>New message:</h1>
+            <label for="email">To:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+
+            <label for="cc">Cc:</label>
+            <br>
+            <input type="text" name="cc" id="cc">
+            <br>
+
+            <label for="subject">Subject:</label>
+            <br>
+            <input type="text" name="subject" id="subject">
+            <br>
+
+
+            <label for="content">Content:</label>
+            <br>
+            <div id="content_placeholder">
+            </div>
+            <br>
+
+            <button id="insert">Insert</button>
+            <button id="send">Send</button>
+
+          </div>
+
+          <div id="pass_dialog" title="Set your password">
+            <label for="password">New Password:</label>
+            <br>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <label for="passwordr">Repeat Password:</label>
+            <br>
+            <input type="password" name="passwordr" id="passwordr">
+            <br>
+            <div id="dialog_error">
+
+            </div>
+          </div>
+
+
+          <div id="insert_dialog" title="Message Content">
+            To:
+            <span id="insert_to"></span>
+            <br>
+            Subject:
+            <span id="insert_subject"></span>
+            <br>
+            Cc:
+            <span id="insert_cc"></span>
+            <br>
+            <br>
+
+            <label for="content">Content:</label>
+            <br>
+            <textarea name="content" id="content"></textarea>
+            <br>
+          </div>
+
+
+          <div id="pass_check_dialog" title="Password">
+            <label for="password_check">Password:</label>
+            <br>
+            <input type="password" name="password_check" id="password_check">
+            <br>
+            <br>
+
+
+          </div>
+
+          <div id="status_dialog" title="Status">
+            <div id="dialog_error_2">
+
+            </div>
+          </div>
+        </div>
+        <div id="step_2" class='step_block'> 
+          <div id="sent_emails">
+          </div>
+          <button id="delete_sent">Delete</button>
+        </div>
+        <div id="step_3" class='step_block'> Done</div>
+
+      </div>
+      <div id="steps_nav" class="blue_strip">
+        <button id="step_nav_prev" class="step_nav disabled">Previous</button>
+        <button id="step_nav_next" class="step_nav">Next</button>
+      </div>
+    </div>
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+
+</html>
