@@ -1,0 +1,54 @@
+<!-- Sameh Shahin (ext210010: sameh.shahin@students.finki.ukim.mk) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      
+      <div id="main_container">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Name" >
+        <span class="err_msg">Insert a name</span>
+        <br>
+        <label for="surename">Surename:</label>
+        <input type="text" placeholder="Surename" >
+        <span class="err_msg">Insert a surename</span>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" >
+        <span class="err_msg">Insert a password</span>
+        <br>
+        <label for="birthdate">Date of Birth:</label>
+        <input id="birthdate" type="text" placeholder="Date of Birth" >
+        <span class="err_msg">Select a date</span>
+        <br>
+        <br>
+        <br>
+        Select your hobbies:
+        <ol id="hobbies">
+          <li class="ui-widget-content">Gaming</li>
+          <li class="ui-widget-content">Sports</li>
+          <li class="ui-widget-content">Watching TV</li>
+          <li class="ui-widget-content">Sleeping</li>
+          <li class="ui-widget-content">Hiking</li>
+          <li class="ui-widget-content">Skiing</li>
+          <li class="ui-widget-content">Dancing</li>
+        </ol>
+        <br>
+        <br>
+        <button id="addInfo">Add my info</button>
+      </div>
+      <div id="dialog" title="User info"></div>
+    </div>
+    </body>
+    <script src="script.js"></script>
+    </html>

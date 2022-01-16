@@ -1,0 +1,19 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    width: 300px;
+    margin: 100px auto;
+}
+
+#project {
+    margin-top: 5px;
+}
+
+#project-description {
+    width: 300px;
+    background: #eef;
+    padding: 5px;
+    border: 1px gray dotted;
+}

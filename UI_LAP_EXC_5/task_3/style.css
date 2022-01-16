@@ -1,0 +1,47 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    width: 500px;
+    margin: 100px auto;
+}
+
+input {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#items .ui-selected {
+    background: #148ff3;
+    color: white;
+}
+
+#items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#items li {
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+#dialog div {
+    margin-top: 10px;
+}
+
+#selected {
+    margin-bottom: 20px;
+}
+
+#selected span {
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 10px 5px 10px 0px;
+    background: teal;
+    color: #fff
+}
