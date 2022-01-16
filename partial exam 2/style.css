@@ -1,0 +1,81 @@
+body {
+    font-family: helvetica;
+}
+
+#main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.list_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#cities {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#cities ul {
+    list-style: none;
+    padding: 0
+}
+
+#cities ul li {
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+#stores {
+    display: inline-block;
+    width: calc(50% - 60px);
+    min-height: 100vh;
+    padding: 0 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#stores button {
+    float: right;
+    vertical-align: middle;
+    display: none;
+}
+
+#favs {
+    display: inline-block;
+    width: calc(50% - 80px);
+    min-height: 100vh;
+    padding: 0 5px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.connected_lists {
+    min-height: 90vh;
+}
+
+.store_container {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed black;
+    line-height: 1.4em;
+}
+
+.store_container:last-child {
+    border-bottom: 0px;
+}
+
+.store_details {
+    display: none;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #606060;
+    line-height: 1.5em;
+}
